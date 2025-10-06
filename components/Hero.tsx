@@ -15,8 +15,13 @@ const Button: React.FC<{ href: string, children: React.ReactNode, variant?: 'pri
 
 export const Hero: React.FC = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center pt-24 pb-12 px-6">
+    <section className="min-h-screen flex items-center justify-center pt-32 pb-12 px-6">
       <div className="text-center max-w-4xl mx-auto opacity-0 animation-fadeInUp">
+        <img
+          src="/assets/hero-image.png"
+          alt="Abstract design"
+          className="mx-auto mb-10 w-full max-w-2xl rounded-lg shadow-2xl shadow-cyan-500/20"
+        />
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter mb-6 bg-gradient-to-br from-slate-100 to-cyan-400 text-transparent bg-clip-text">
           Infinite Imagination
         </h1>

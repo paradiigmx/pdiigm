@@ -1,6 +1,5 @@
 
 import React, { useState, useEffect } from 'react';
-import { InfinityIcon } from './icons';
 
 const NavLink: React.FC<{ href: string; children: React.ReactNode; onClick?: () => void; isCta?: boolean }> = ({ href, children, onClick, isCta = false }) => (
   <li>
@@ -47,10 +46,8 @@ export const Header: React.FC = () => {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a href="#" className="flex items-center">
-          <div className="w-8 h-8 text-cyan-400">
-            <InfinityIcon />
-          </div>
-          <span className="ml-2 text-2xl font-bold text-slate-100">ParadiigmX</span>
+          <span className="text-3xl text-white mr-2">♾️</span>
+          <span className="text-2xl font-bold text-slate-100">Paradiigm LLC</span>
         </a>
         <nav className="hidden md:flex items-center">
           <ul className="flex items-center space-x-8">
