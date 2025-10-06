@@ -1,18 +1,20 @@
-# Paradiigm Next.js Starter (Vercel + GitHub)
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-A clean, brandable Next.js 14 starter with TypeScript, ready for Vercel. No backend required.
+# Run and deploy your AI Studio app
 
-## Quick Start
-1. **Create a new GitHub repo** and upload these files (unzipped).
-2. In **Vercel → New Project**, import the repo.
-3. Set **Build Command** to `npm run vercel-build` (or add in Project Settings after import).
-4. Deploy. Edit files and push to `main` for instant updates.
+This contains everything you need to run your app locally.
 
-## Customize
-- Edit `/components` for layout/sections.
-- Homepage is `/pages/index.tsx`.
-- Add pages by adding files in `/pages` (e.g., `about.tsx`).
-- Basic blog scaffold in `/pages/blog` and `/lib/posts.ts`.
+View your app in AI Studio: https://ai.studio/apps/drive/19rQxwtt87voUtG2PBwEPlIEMbQm2ID1u
 
-## Domains
-Point your domain in Vercel → Settings → Domains, then follow DNS instructions.
+## Run Locally
+
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
