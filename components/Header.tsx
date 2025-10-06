@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { InfinityIcon } from './icons';
 
 const NavLink: React.FC<{ href: string; children: React.ReactNode; onClick?: () => void; isCta?: boolean }> = ({ href, children, onClick, isCta = false }) => (
   <li>
@@ -30,9 +31,12 @@ export const Header: React.FC = () => {
   const closeMenu = () => setIsMenuOpen(false);
 
   const navLinks = [
-    { href: "#products", text: "Products" },
     { href: "#services", text: "Services" },
+    { href: "#products", text: "Products" },
     { href: "#features", text: "Features" },
+    { href: "#supplier", text: "Supplier" },
+    { href: "#initiatives", text: "Initiatives" },
+    { href: "#creative", text: "Creative" },
   ];
 
   return (
@@ -43,7 +47,10 @@ export const Header: React.FC = () => {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a href="#" className="flex items-center">
-          <img src="/assets/logo.png" alt="ParadiigmX Logo" className="h-9" />
+          <div className="w-8 h-8 text-cyan-400">
+            <InfinityIcon />
+          </div>
+          <span className="ml-2 text-2xl font-bold text-slate-100">ParadiigmX</span>
         </a>
         <nav className="hidden md:flex items-center">
           <ul className="flex items-center space-x-8">
