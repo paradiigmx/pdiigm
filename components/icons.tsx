@@ -27,3 +27,13 @@ export const TwitterIcon = () => <Icon><path d="M18.244 2.25h3.308l-7.227 8.26 8
 export const LinkedInIcon = () => <Icon><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></Icon>;
 export const MailIcon = () => <Icon><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.625a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></Icon>;
 
+export const InfinityIcon = () => (
+  <Icon>
+    <path strokeLinecap="round" strokeLinejoin="round" d="M14.94,8.04C13.62,7.18,11.9,7.2,10.6,8.08c-1.3,0.88-2.1,2.44-2.1,4.12s0.8,3.24,2.1,4.12c1.3,0.88,3.02,0.86,4.34-0.04" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M9.06,15.96c1.32,0.86,3.04,0.84,4.36-0.06c1.32-0.9,2.12-2.46,2.12-4.14s-0.8-3.24-2.12-4.14c-1.32-0.9-3.04-0.88-4.36,0.04" />
+  </Icon>
+);
+
+export const PlaneIcon = () => <Icon><path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" /></Icon>;
+
+export const CheckmarkIcon = () => <Icon><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15L15 9.75" /></Icon>;
