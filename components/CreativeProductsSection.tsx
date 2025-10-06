@@ -34,50 +34,38 @@ export const CreativeProductsSection: React.FC = () => {
             <div className="space-y-12">
                 {products.map((item, index) => (
                     <Card key={item.title} index={index}>
-                        <div className="md:flex md:items-start md:gap-8">
+                        <div>
+                            <h3 className="text-2xl font-bold mb-2 text-white">{item.title}</h3>
+                            <p className="text-slate-400 mb-4"><span className="font-semibold text-slate-300">Concept:</span> {item.concept}</p>
+                            {item.format && <p className="text-slate-400 mb-4"><span className="font-semibold text-slate-300">Format:</span> {item.format}</p>}
+                            {item.platform && <p className="text-slate-400 mb-4"><span className="font-semibold text-slate-300">Platform:</span> {item.platform}</p>}
+                            {item.content && <p className="text-slate-400 mb-6"><span className="font-semibold text-slate-300">Content:</span> {item.content}</p>}
+
+                            {item.features && (
+                                <>
+                                    <h4 className="text-lg font-semibold text-slate-200 mb-3">Features:</h4>
+                                    <ul className="space-y-2 text-slate-400">
+                                        {item.features.map((feature, i) => (
+                                            <li key={i} className="flex">
+                                                <span className="text-cyan-400 mr-2">›</span>
+                                                <span>{feature}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </>
+                            )}
+                            {item.expansion && <p className="text-slate-400 mt-4"><span className="font-semibold text-slate-300">Expansion:</span> {item.expansion}</p>}
+
                             {item.title.includes("Shades of Greatness") && (
-                                <div className="md:w-1/3 mb-6 md:mb-0">
-                                    <img src="/assets/shades-of-greatness.png" alt="Shades of Greatness Coloring Book" className="rounded-lg shadow-lg" />
-                                </div>
+                                <a
+                                    href="https://www.amazon.com/Black-Icons-Coloring-Book-Trailblazers/dp/B0FT125XXG/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-block mt-6 px-6 py-3 bg-yellow-500 text-black font-bold rounded-lg hover:bg-yellow-400 transition-colors"
+                                >
+                                    Buy Now on Amazon
+                                </a>
                             )}
-                            {item.title.includes("Toon Teachers") && (
-                                <div className="md:w-1/3 mb-6 md:mb-0">
-                                    <img src="/assets/toon-teachers.png" alt="Toon Teachers" className="rounded-lg shadow-lg" />
-                                </div>
-                            )}
-                            <div className="md:w-2/3">
-                                <h3 className="text-2xl font-bold mb-2 text-white">{item.title}</h3>
-                                <p className="text-slate-400 mb-4"><span className="font-semibold text-slate-300">Concept:</span> {item.concept}</p>
-                                {item.format && <p className="text-slate-400 mb-4"><span className="font-semibold text-slate-300">Format:</span> {item.format}</p>}
-                                {item.platform && <p className="text-slate-400 mb-4"><span className="font-semibold text-slate-300">Platform:</span> {item.platform}</p>}
-                                {item.content && <p className="text-slate-400 mb-6"><span className="font-semibold text-slate-300">Content:</span> {item.content}</p>}
-
-                                {item.features && (
-                                    <>
-                                        <h4 className="text-lg font-semibold text-slate-200 mb-3">Features:</h4>
-                                        <ul className="space-y-2 text-slate-400">
-                                            {item.features.map((feature, i) => (
-                                                <li key={i} className="flex">
-                                                    <span className="text-cyan-400 mr-2">›</span>
-                                                    <span>{feature}</span>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </>
-                                )}
-                                {item.expansion && <p className="text-slate-400 mt-4"><span className="font-semibold text-slate-300">Expansion:</span> {item.expansion}</p>}
-
-                                {item.title.includes("Shades of Greatness") && (
-                                    <a
-                                        href="https://www.amazon.com/Black-Icons-Coloring-Book-Trailblazers/dp/B0FT125XXG/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="inline-block mt-6 px-6 py-3 bg-yellow-500 text-black font-bold rounded-lg hover:bg-yellow-400 transition-colors"
-                                    >
-                                        Buy Now on Amazon
-                                    </a>
-                                )}
-                            </div>
                         </div>
                     </Card>
                 ))}
