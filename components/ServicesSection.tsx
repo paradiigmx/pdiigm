@@ -44,15 +44,14 @@ export const ServicesSection: React.FC = () => {
       badge="Our Services"
       title="Full-Service Digital Solutions"
       subtitle="From concept to launch, we bring your vision to life"
-      className="bg-slate-900/40 border-y border-slate-800"
     >
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service, index) => (
-          <Card key={service.title} index={index} variant="secondary">
-            <div className="w-16 h-16 rounded-2xl flex items-center justify-center text-cyan-300 bg-cyan-500/10 text-3xl mb-6 transition-all duration-300 group-hover:bg-gradient-to-br group-hover:from-[#0066ff] group-hover:to-[#00b4d8] group-hover:text-white group-hover:scale-110">
+          <Card key={service.title} index={index}>
+            <div className="w-14 h-14 rounded-lg flex items-center justify-start text-cyan-400 text-4xl mb-6">
               {service.icon}
             </div>
-            <h3 className="text-xl font-bold mb-3 text-white">{service.title}</h3>
+            <h3 className="text-xl font-bold mb-3 text-slate-100">{service.title}</h3>
             <p className="text-slate-400 leading-relaxed">{service.description}</p>
           </Card>
         ))}
