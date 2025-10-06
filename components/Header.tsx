@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 
 const NavLink: React.FC<{ href: string; children: React.ReactNode; onClick?: () => void; isCta?: boolean }> = ({ href, children, onClick, isCta = false }) => (
@@ -34,7 +33,6 @@ export const Header: React.FC = () => {
     { href: "#products", text: "Products" },
     { href: "#features", text: "Features" },
     { href: "#supplier", text: "Supplier" },
-    { href: "#initiatives", text: "Initiatives" },
     { href: "#creative", text: "Creative" },
   ];
 
