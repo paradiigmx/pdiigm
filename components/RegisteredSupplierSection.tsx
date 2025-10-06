@@ -6,7 +6,7 @@ const registrations = [
     "DUNS / UEI registered (for federal SAM.gov contracts)",
     "Nevada Business License #",
     "NGEM Supplier ID #",
-    "CAGE Code (if SAM.gov active)"
+    "CAGE Code"
 ];
 
 export const RegisteredSupplierSection: React.FC = () => {
