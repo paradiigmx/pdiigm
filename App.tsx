@@ -6,7 +6,6 @@ import { ProductsSection } from './components/ProductsSection';
 import { ServicesSection } from './components/ServicesSection';
 import { FeaturesSection } from './components/FeaturesSection';
 import { RegisteredSupplierSection } from './components/RegisteredSupplierSection';
-import { LegalInitiativesSection } from './components/LegalInitiativesSection';
 import { CreativeProductsSection } from './components/CreativeProductsSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
@@ -23,7 +22,6 @@ const App: React.FC = () => {
         <ProductsSection />
         <FeaturesSection />
         <RegisteredSupplierSection />
-        <LegalInitiativesSection />
         <CreativeProductsSection />
         <ContactSection />
       </main>
