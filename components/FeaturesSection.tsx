@@ -30,7 +30,7 @@ export const FeaturesSection: React.FC = () => {
     return (
         <Section
             id="features"
-            badge="Why Choose ParadiigmX"
+            badge="Why Choose Paradiigm LLC"
             title="Built for Excellence"
             subtitle="Innovation meets reliability in everything we create"
         >

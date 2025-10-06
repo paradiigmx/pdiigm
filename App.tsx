@@ -8,6 +8,7 @@ import { FeaturesSection } from './components/FeaturesSection';
 import { RegisteredSupplierSection } from './components/RegisteredSupplierSection';
 import { LegalInitiativesSection } from './components/LegalInitiativesSection';
 import { CreativeProductsSection } from './components/CreativeProductsSection';
+import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { AnimatedBackground } from './components/AnimatedBackground';
 
@@ -24,6 +25,7 @@ const App: React.FC = () => {
         <RegisteredSupplierSection />
         <LegalInitiativesSection />
         <CreativeProductsSection />
+        <ContactSection />
       </main>
       <Footer />
     </div>
