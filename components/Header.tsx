@@ -7,8 +7,8 @@ const NavLink: React.FC<{ href: string; children: React.ReactNode; onClick?: () 
       href={href}
       onClick={onClick}
       className={isCta
-        ? "block px-6 py-2 bg-gradient-to-r from-[#0066ff] to-[#00b4d8] rounded-full text-white font-semibold transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30"
-        : "block text-slate-300 hover:text-cyan-300 transition-colors duration-300 py-2"}
+        ? "block px-5 py-2 bg-blue-600 rounded-lg text-white font-semibold transition-all duration-300 hover:scale-105 hover:bg-blue-500"
+        : "block text-slate-200 hover:text-white transition-colors duration-300 py-2 font-medium"}
     >
       {children}
     </a>
@@ -42,8 +42,8 @@ export const Header: React.FC = () => {
         }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <a href="#" className="text-3xl font-bold bg-gradient-to-r from-white to-cyan-400 text-transparent bg-clip-text">
-          ParadiigmX
+        <a href="#" className="flex items-center">
+          <img src="/assets/logo.png" alt="ParadiigmX Logo" className="h-9" />
         </a>
         <nav className="hidden md:flex items-center">
           <ul className="flex items-center space-x-8">
