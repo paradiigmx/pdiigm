@@ -44,7 +44,7 @@ export const Header: React.FC = () => {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a href="#" className="flex items-center">
-          <img src="/images/inverted-logo-horzhi-res.png" alt="Paradiigm LLC" className="h-8" />
+          <img src="/images/inverted-logo-horzhi-res.png" alt="Paradiigm LLC" className="h-12" />
         </a>
         <nav className="hidden md:flex items-center">
           <ul className="flex items-center space-x-8">
