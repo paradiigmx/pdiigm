@@ -80,7 +80,7 @@ export const ProductsSection: React.FC = () => {
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         {products.map((product, index) => (
           <Card key={product.name} index={index}>
-            <div className={`w-20 h-20 rounded-lg flex items-center justify-center text-white text-3xl mb-6 ${product.iconBg}`}>
+            <div className={`w-28 h-28 rounded-lg flex items-center justify-center text-white text-3xl mb-6 ${product.iconBg}`}>
               {product.icon}
             </div>
             <h3 className="text-xl font-bold mb-2 text-slate-100">{product.name}</h3>
@@ -92,14 +92,15 @@ export const ProductsSection: React.FC = () => {
         ))}
       </div>
 
-      <div className="text-center my-16 md:my-24 opacity-0 animation-fadeInUp" style={{animationDelay: "300ms"}}>
+      <div className="text-center my-16 md:my-24 opacity-0 animation-fadeInUp flex justify-center items-center" style={{animationDelay: "300ms"}}>
+        <img src="/images/main-white-buddy-icon%20copy%202-med-res.png" alt="BuddyApp Series" className="h-8 mr-4" />
         <h3 className="text-3xl font-extrabold tracking-tighter text-slate-100">The BuddyApp Series</h3>
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         {buddyApps.map((product, index) => (
           <Card key={product.name} index={products.length + index}>
-            <div className="w-24 h-24 rounded-lg flex items-center justify-center text-white text-3xl mb-6">
+            <div className="w-28 h-28 rounded-lg flex items-center justify-center text-white text-3xl mb-6">
               {product.icon}
             </div>
             <h3 className="text-xl font-bold mb-2 text-slate-100">{product.name}</h3>
