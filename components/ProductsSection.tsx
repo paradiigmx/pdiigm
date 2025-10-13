@@ -85,10 +85,7 @@ export const ProductsSection: React.FC = () => {
     >
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         {products.map((product, index) => (
-          <Card key={product.name} index={index}>
-            <div className={`w-20 h-20 rounded-lg flex items-center justify-center text-white text-3xl mb-6 ${product.iconBg}`}>
-              {product.icon}
-            </div>
+          <Card key={product.name} index={index} icon={product.icon} iconBg={product.iconBg}>
             <h3 className="text-xl font-bold mb-2 text-slate-100">{product.name}</h3>
             <span className={getStatusChip("Coming Soon")}>
               Coming Soon
@@ -104,7 +101,7 @@ export const ProductsSection: React.FC = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         {buddyApps.map((product, index) => (
-          <Card key={product.name} index={products.length + index} icon={product.icon}>
+          <Card key={product.name} index={products.length + index} icon={product.icon} iconBg={product.iconBg}>
             <h3 className="text-xl font-bold mb-2 text-slate-100">{product.name}</h3>
             <span className={getStatusChip("Coming Soon")}>
               Coming Soon
