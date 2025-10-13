@@ -18,7 +18,7 @@ export const Footer: React.FC = () => {
           <SocialLink href="mailto:info@pdiigm.com"><MailIcon /></SocialLink>
         </div>
         <div className="flex justify-center items-center">
-            <img src="/images/inverted-logo-horzhi-res.png" alt="Paradiigm LLC" className="h-8" />
+            <img src="/images/inverted-logo-horzhi-res.png" alt="Paradiigm LLC" className="h-12" />
         </div>
         <p className="text-slate-500 mt-4">
           © {currentYear} All rights reserved.
