@@ -44,8 +44,7 @@ export const Header: React.FC = () => {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a href="#" className="flex items-center">
-          <span className="text-3xl text-white mr-2">♾️</span>
-          <span className="text-2xl font-bold text-slate-100">Paradiigm LLC</span>
+          <img src="/images/inverted-logo-horzhi-res.png" alt="Paradiigm LLC" className="h-8" />
         </a>
         <nav className="hidden md:flex items-center">
           <ul className="flex items-center space-x-8">

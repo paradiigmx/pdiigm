@@ -17,8 +17,11 @@ export const Footer: React.FC = () => {
         <div className="flex justify-center items-center gap-4 mb-8">
           <SocialLink href="mailto:info@pdiigm.com"><MailIcon /></SocialLink>
         </div>
-        <p className="text-slate-500">
-          © {currentYear} Paradiigm LLC. All rights reserved.
+        <div className="flex justify-center items-center">
+            <img src="/images/inverted-logo-horzhi-res.png" alt="Paradiigm LLC" className="h-8" />
+        </div>
+        <p className="text-slate-500 mt-4">
+          © {currentYear} All rights reserved.
         </p>
       </div>
     </footer>
