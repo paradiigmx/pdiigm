@@ -6,9 +6,10 @@ interface CardProps {
   children: React.ReactNode;
   index: number;
   variant?: 'primary' | 'secondary' | 'tertiary';
+  icon?: string;
 }
 
-export const Card: React.FC<CardProps> = ({ children, index, variant = 'primary' }) => {
+export const Card: React.FC<CardProps> = ({ children, index, variant = 'primary', icon }) => {
   const [ref, isInView] = useInView({ threshold: 0.1, triggerOnce: true });
 
   const getVariantClasses = () => {
@@ -35,6 +36,11 @@ export const Card: React.FC<CardProps> = ({ children, index, variant = 'primary'
     >
       <div className="absolute inset-0 bg-gradient-to-br from-slate-800/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
       <div className="relative z-10">
+        {icon && (
+            <div className="w-20 h-20 rounded-lg flex items-center justify-center text-white text-3xl mb-6">
+                <img src={icon} alt="" className="w-full h-full object-contain" />
+            </div>
+        )}
         {children}
       </div>
     </div>
