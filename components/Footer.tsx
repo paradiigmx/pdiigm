@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { MailIcon } from './icons';
+import invertedLogo from '/images/inverted-logo-horzhi-res.png';
 
 const SocialLink: React.FC<{ href: string; children: React.ReactNode }> = ({ href, children }) => (
   <a href={href} className="w-10 h-10 bg-slate-900/70 border border-slate-700 rounded-lg flex items-center justify-center text-slate-400 hover:text-white hover:border-slate-500 transition-all duration-300">
@@ -17,8 +18,11 @@ export const Footer: React.FC = () => {
         <div className="flex justify-center items-center gap-4 mb-8">
           <SocialLink href="mailto:info@pdiigm.com"><MailIcon /></SocialLink>
         </div>
+        <div className="flex justify-center items-center mb-4">
+          <img src={invertedLogo} alt="Paradiigm LLC" className="h-8" />
+        </div>
         <p className="text-slate-500">
-          © {currentYear} Paradiigm LLC. All rights reserved.
+          © {currentYear} All rights reserved.
         </p>
       </div>
     </footer>
