@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import invertedLogo from '/images/inverted-logo-horzhi-res.png';
 
 const NavLink: React.FC<{ href: string; children: React.ReactNode; onClick?: () => void; isCta?: boolean }> = ({ href, children, onClick, isCta = false }) => (
   <li>
@@ -45,7 +44,7 @@ export const Header: React.FC = () => {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a href="#" className="flex items-center">
-          <img src={invertedLogo} alt="Paradiigm LLC" className="h-12" />
+          <img src="/images/inverted-logo-horzhi-res.png" alt="Paradiigm LLC" className="h-12" />
         </a>
         <nav className="hidden md:flex items-center">
           <ul className="flex items-center space-x-8">
