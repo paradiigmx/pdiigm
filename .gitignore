@@ -21,3 +21,6 @@ yarn-error.log*
 
 # Scratch directory
 jules-scratch/
+
+# Log files
+dev.log
